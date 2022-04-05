@@ -13,4 +13,4 @@ These hooks use [Andy Martin's hook framework](https://github.com/123andy/redcap
 
 To deploy you must first take the actions listed above to disable or enable every feature. Most hooks have some junk defaults in place that you will not want to deploy to a production enviorment.
 
-In general the `global_hooks.php` file contains includes includes for specific files, typically just one line per hook. The `redcap_hooks.php` file contains modifications to behavior (i.e. rejecting an email) via function ivocation.
+In general the `global_hooks.php` file contains includes includes for specific files, typically just one line per hook. The `redcap_hooks.php` file contains modifications to behavior (i.e. rejecting an email) via function ivocation. Files not mentioned above are apart of the framework from Andy (above) and do not need to be changed. If you plan to deploy them to production you should review them.
