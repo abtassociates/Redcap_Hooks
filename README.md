@@ -11,6 +11,6 @@ These hooks use [Andy Martin's hook framework](https://github.com/123andy/redcap
   * To Enable - Review `loginPageCustomization.php` and make any modifications you'd like
   * To Disable - Edit `global_hooks.php` to remove the 1 line 
 
-To deploy you must first take the actions listed above to disable or enable every feature. Most hooks have some junk defaults in place that you will not want to deploy to a production enviorment.
+To deploy you must first take the actions listed above to disable or enable every feature. Most hooks have some junk defaults in place that you will not want to deploy to a production enviorment. The files should be placed in the webroot of of your app server in a folder "hooks", typically `C:\inetpub\wwwroot\redcap\hooks` on windows and `/var/www/redcap/hooks` on linux.
 
 In general the `global_hooks.php` file contains includes includes for specific files, typically just one line per hook. The `redcap_hooks.php` file contains modifications to behavior (i.e. rejecting an email) via function ivocation. Files not mentioned above are apart of the framework from Andy (above) and do not need to be changed. If you plan to deploy them to production you should review them.
